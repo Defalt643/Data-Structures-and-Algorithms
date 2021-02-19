@@ -13,16 +13,10 @@ public class HashMap_1 {
 			}
 			L.put(key, kb.nextInt());
 		}key=kb.next();
-		try {
-			if(L.get(key)==null) {
-				System.out.println("not found");
-			}else {
-				System.out.println(L.get(key));
-
-			}
-		}catch(NullPointerException e) {
-			System.out.println("not founasdd");
-		}
-			
+		if(L.get(key)==null) {
+			System.out.println("not found");
+		}else {
+			System.out.println(L.get(key));
+		}	
 	}
 }
